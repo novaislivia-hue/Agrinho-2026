@@ -1,0 +1,127 @@
+/* Configurações de Cores e Reset */
+:root {
+    --bg-color: #121824;
+    --text-color: #ffffff;
+    --neon-green: #00E676;
+    --vibrant-orange: #FF6D00;
+    --card-bg: #1A2333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: var(--neon-green);
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--neon-green);
+}
+
+/* Seção Hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 70vh;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.neon-text {
+    color: var(--neon-green);
+    text-shadow: 0 0 10px var(--neon-green);
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 30px;
+    color: #A0AEC0;
+}
+
+.btn-cta {
+    background-color: var(--vibrant-orange);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-cta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--vibrant-orange);
+}
+
+/* Seção de Pilares */
+.pilares-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 5%;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 2px solid transparent;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: var(--neon-green);
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.card p {
+    color: #CBD5E0;
+    font-size: 15px;
+}
